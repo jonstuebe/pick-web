@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import Card from "../../components/Card";
 
@@ -8,30 +9,29 @@ export default function Categories() {
   return (
     <>
       <header className="relative">
-        <button
-          onClick={() => router.back()}
-          className="absolute visible p-2 text-white top-3 left-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-        <h2 className="py-4 text-2xl font-bold text-center text-white md:text-3xl">
+        <Link passHref href={`/`}>
+          <a className="absolute p-2 text-white md:invisible top-3 left-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </a>
+        </Link>
+        <h2 className="py-4 text-2xl font-bold text-center text-white md:text-4xl">
           Categories
         </h2>
       </header>
-      <main className="grid grid-cols-1 gap-0 md:max-w-5xl md:my-0 md:mx-auto md:grid-cols-2">
+      <main className="grid grid-cols-1 md:gap-4 md:max-w-5xl md:my-0 md:mx-auto md:grid-cols-2">
         <Card
           label="Mexican"
           href={`/category/mexican?type=${type}`}

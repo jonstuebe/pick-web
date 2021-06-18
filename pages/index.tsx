@@ -3,9 +3,12 @@ import Card from "../components/Card";
 export default function Home() {
   return (
     <>
-      <header>
-        <h2 className="py-4 text-2xl font-bold text-center text-white md:text-3xl">
-          Type
+      <header className="pt-4 mb-4 md:mb-20 md:pt-6">
+        <h1 className="text-4xl font-bold text-center text-white md:text-6xl">
+          pick
+        </h1>
+        <h2 className="text-xl font-semibold text-center text-gray-300 md:text-3xl">
+          a better way to pick dinner
         </h2>
       </header>
       <main className="grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-5xl md:my-0 md:mx-auto">
@@ -34,7 +37,7 @@ export default function Home() {
             }
           })();
         }}
-        className="fixed inline-flex items-center p-3 text-white bg-blue-600 border border-transparent rounded-full shadow-sm bottom-4 right-4 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        className="fixed inline-flex items-center p-3 text-white bg-gray-600 border border-transparent rounded-full shadow-sm bottom-4 right-4 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

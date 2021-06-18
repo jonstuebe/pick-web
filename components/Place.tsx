@@ -18,14 +18,14 @@ export default function Place({ label, brandColor, url }: PlaceProps) {
               url,
             });
           } catch (e) {
-            console.log(e);
+            window.open(url, "_blank");
           }
         })();
       }}
       className="px-4 py-10 pb-4"
       style={{ backgroundColor: brandColor }}
     >
-      <h2 className="text-4xl font-semibold text-left text-white md:text-5xl">
+      <h2 className="text-4xl font-semibold text-left text-white md:text-3xl">
         {label}
       </h2>
     </button>
