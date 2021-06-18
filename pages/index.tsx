@@ -8,8 +8,8 @@ export default function Home() {
         <title>Pick</title>
       </Head>
       <header className="pt-4 mb-4 md:mb-20 md:pt-6">
-        <h1 className="text-4xl font-bold text-center text-white md:text-6xl">
-          pick
+        <h1 className="text-4xl font-bold tracking-tight text-center text-white md:text-6xl">
+          Pick
         </h1>
         <h2 className="text-xl font-semibold text-center text-gray-300 md:text-3xl">
           a better way to pick dinner
