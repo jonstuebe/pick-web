@@ -25,8 +25,9 @@ export default function Category() {
     );
   }, [places, slug, type]);
 
-  const categoryName =
-    slug[0].toUpperCase() + (slug as string).substr(1, slug.length);
+  const categoryName = slug
+    ? slug[0].toUpperCase() + (slug as string).substr(1, slug.length)
+    : "";
 
   if (!slug) return null;
 
