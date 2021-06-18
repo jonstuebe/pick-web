@@ -41,7 +41,7 @@ export default function Category() {
             : `${categoryName} Restaurants`}
         </title>
       </Head>
-      <header className="fixed top-0 left-0 z-10 w-full h-16 backdrop-filter bg-black/70 backdrop-blur-md md:bg-transparent md:h-auto md:relative">
+      <header className="fixed top-0 left-0 z-10 w-full h-16 bg-black md:bg-transparent md:h-auto md:relative">
         <Link passHref href={`/category?type=${type}`}>
           <a className="absolute p-2 text-white md:invisible top-3 left-2">
             <svg
