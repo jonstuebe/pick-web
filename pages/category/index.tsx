@@ -43,9 +43,9 @@ export default function Categories() {
         unsplashID="cpkPJ-U9eUM"
       />
       <Card
-        label="Korean BBQ"
-        href={`/category/korean-bbq?type=${type}`}
-        unsplashID="4f4YZfDMLeU"
+        label="Mediterranean"
+        href={`/category/mediterranean?type=${type}`}
+        unsplashID="C1fMH2Vej8A"
       />
       <Card
         label="Sandwiches"

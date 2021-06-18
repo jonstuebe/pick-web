@@ -193,12 +193,84 @@ const places: Record<CategoryType, PlaceProps[]> = {
       url: "https://www.peiwei.com/arizona/9-gilbert/",
     },
   ],
-  vietnamese: [],
-  thai: [],
-  barbecue: [],
-  korean_bbq: [],
-  sandwiches: [],
-  salad: [],
+  vietnamese: [
+    {
+      label: "Sadec Bistro",
+      brandColor: "#e60001",
+      type: "restaurant",
+      url: "https://www.sadecbistro.com/",
+    },
+    {
+      label: "The Clever Koi",
+      brandColor: "#c39e47",
+      type: "restaurant",
+      url: "https://www.thecleverkoi.com/",
+    },
+  ],
+  thai: [
+    {
+      label: "Thai Chili 2 Go",
+      brandColor: "#e32631",
+      type: "fastfood",
+      url: "https://tc2go.com/menu/",
+    },
+    {
+      label: "Ta lew Thai Bistro",
+      brandColor: "#f36b37",
+      type: "restaurant",
+      url: "https://www.talewthai.com/",
+    },
+  ],
+  barbecue: [
+    {
+      label: "Rudy's",
+      brandColor: "#ff2d1f",
+      type: "restaurant",
+      url: "https://rudysbbq.com/",
+    },
+    {
+      label: "Caldwell County BBQ",
+      brandColor: "#973625",
+      type: "restaurant",
+      url: "https://www.caldwellcountybbq.com/",
+    },
+  ],
+  sandwiches: [
+    {
+      label: "Chompie's",
+      brandColor: "#ef2d2b",
+      type: "restaurant",
+      url: "https://chompies.com/",
+    },
+    {
+      label: "Not Your Typical Deli",
+      brandColor: "#23201f",
+      type: "fastfood",
+      url: "http://nytdeli.com/",
+    },
+    {
+      label: "Surf City Sandwich",
+      brandColor: "#a10000",
+      type: "fastfood",
+      url: "https://www.surfcitysandwich.com/gilbert-arizona/",
+    },
+  ],
+  salad: [
+    {
+      label: "Mad Greens",
+      brandColor: "#551079",
+      type: "fastfood",
+      url: "https://order.madgreens.com/menu/mad-greens-dana-park",
+    },
+  ],
+  mediterranean: [
+    {
+      label: "Pita Jungle",
+      brandColor: "#137150",
+      type: "restaurant",
+      url: "https://www.pitajungle.com/locations/mesa-dana-park",
+    },
+  ],
 };
 
 export default places;

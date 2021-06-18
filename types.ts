@@ -6,6 +6,6 @@ export type CategoryType =
   | "vietnamese"
   | "thai"
   | "barbecue"
-  | "korean_bbq"
+  | "mediterranean"
   | "sandwiches"
   | "salad";
