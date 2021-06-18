@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Card from "../components/Card";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Pick</title>
+      </Head>
       <header className="pt-4 mb-4 md:mb-20 md:pt-6">
         <h1 className="text-4xl font-bold text-center text-white md:text-6xl">
           pick

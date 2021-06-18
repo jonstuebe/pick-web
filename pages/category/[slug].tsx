@@ -1,5 +1,7 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 import Place from "../../components/Place";
 
 import type { CategoryType } from "../../types";
@@ -23,10 +25,21 @@ export default function Category() {
     );
   }, [places, slug, type]);
 
+  const categoryName =
+    slug[0].toUpperCase() + (slug as string).substr(1, slug.length);
+
   if (!slug) return null;
 
   return (
     <>
+      <Head>
+        <title>
+          Pick -{" "}
+          {type === "fastfood"
+            ? `Fast Food ${categoryName}`
+            : `${categoryName} Restaurants`}
+        </title>
+      </Head>
       <header className="fixed top-0 left-0 z-10 w-full h-16 bg-black md:bg-transparent md:h-auto md:relative">
         <Link passHref href={`/category?type=${type}`}>
           <a className="absolute p-2 text-white md:invisible top-3 left-2">
