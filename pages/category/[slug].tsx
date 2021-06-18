@@ -43,6 +43,7 @@ export default function Category() {
         href={`/category/${slug}?type=${
           type === "fastfood" ? "restaurant" : "fastfood"
         }`}
+        replace
       >
         <a className="absolute inline-flex items-center p-3 text-white bg-blue-600 border border-transparent rounded-full shadow-sm bottom-4 right-4 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
           <h4 className="pr-2">
