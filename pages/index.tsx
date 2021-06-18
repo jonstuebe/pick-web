@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       <header>
-        <h2 className="py-4 text-4xl font-bold text-center text-white md:mb-10 md:text-5xl">
-          Pick
+        <h2 className="py-4 text-2xl font-bold text-center text-white md:text-3xl">
+          Type
         </h2>
       </header>
-      <main className="flex flex-col">
+      <main className="grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-5xl md:my-0 md:mx-auto">
         <Card
           label="Restaurant"
           unsplashID="0uAVsDcyD0M"

@@ -49,23 +49,12 @@ const places: Record<CategoryType, PlaceProps[]> = {
       type: "restaurant",
       url: "https://picazzos.com/",
     },
-    {
-      label: "Vito's",
-      brandColor: "#232122",
-      type: "restaurant",
-      url: "https://vitospizza.com/",
-    },
+
     {
       label: "Oregano's",
       brandColor: "#da291b",
       type: "restaurant",
       url: "https://oreganos.com/",
-    },
-    {
-      label: "Venezia's",
-      brandColor: "#da2429",
-      type: "both",
-      url: "https://www.venezias.com/",
     },
     {
       label: "Pieology",
@@ -78,6 +67,18 @@ const places: Record<CategoryType, PlaceProps[]> = {
       brandColor: "#0a7d3e",
       type: "restaurant",
       url: "https://barrospizza.com/",
+    },
+    {
+      label: "Venezia's",
+      brandColor: "#da2429",
+      type: "both",
+      url: "https://www.venezias.com/",
+    },
+    {
+      label: "Vito's",
+      brandColor: "#232122",
+      type: "restaurant",
+      url: "https://vitospizza.com/",
     },
     {
       label: "Sauce",
