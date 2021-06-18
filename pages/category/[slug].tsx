@@ -27,7 +27,7 @@ export default function Category() {
 
   return (
     <>
-      <header className="relative">
+      <header className="fixed top-0 left-0 z-10 w-full h-16 bg-black md:bg-transparent md:h-auto md:relative">
         <Link passHref href={`/category?type=${type}`}>
           <a className="absolute p-2 text-white md:invisible top-3 left-2">
             <svg
@@ -50,6 +50,7 @@ export default function Category() {
           {type === "fastfood" ? "Fast Food" : "Restaurants"}
         </h2>
       </header>
+      <div className="h-16 md:hidden"></div>
       <main className="md:max-w-5xl md:my-0 md:mx-auto">
         {filteredPlaces.length === 0 ? (
           <div className="flex flex-col items-center py-10">

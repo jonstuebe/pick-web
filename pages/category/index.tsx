@@ -8,7 +8,7 @@ export default function Categories() {
 
   return (
     <>
-      <header className="relative">
+      <header className="fixed top-0 left-0 z-10 w-full h-16 bg-black md:bg-transparent md:h-auto md:relative">
         <Link passHref href={`/`}>
           <a className="absolute p-2 text-white md:invisible top-3 left-2">
             <svg
@@ -31,6 +31,7 @@ export default function Categories() {
           Categories
         </h2>
       </header>
+      <div className="h-16 md:hidden"></div>
       <main className="grid grid-cols-1 md:gap-4 md:max-w-5xl md:my-0 md:mx-auto md:grid-cols-2">
         <Card
           label="Mexican"
